@@ -9,7 +9,7 @@ ONBUILD RUN if [ "$DT_ENVIRONMENT_ID" != "" ] && [ "$DT_PAAS_TOKEN" != "" ]; \
         apt-get install -y wget unzip && \
         mkdir -p /opt/dynatrace/oneagent && \
         TEMP_FILE=$(mktemp) && \
-        wget -O $TEMP_FILE "https://$DT_ENVIRONMENT_ID.live.dynatrace.com/api/v1/deployment/installer/agent/unix/paas/latest?Api-Token=$DT_PAAS_TOKEN&include=dotnet" && \
+        wget --no-check-certificate -O $TEMP_FILE "https://$DT_ENVIRONMENT_ID.live.dynatrace.com/api/v1/deployment/installer/agent/unix/paas/latest?Api-Token=$DT_PAAS_TOKEN&include=dotnet" && \
         unzip -o -d /opt/dynatrace/oneagent $TEMP_FILE && \
         rm -f $TEMP_FILE ; \
     fi
