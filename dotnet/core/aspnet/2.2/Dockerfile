@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/core/aspnet:2.2
 ARG DT_ENVIRONMENT_ID=""
 ARG DT_PAAS_TOKEN=""
 
-RUN apt-get update && \
+ONBUILD RUN apt-get update && \
     apt-get install -y wget unzip && \
     mkdir -p /opt/dynatrace/oneagent && \
     if [ "$DT_ENVIRONMENT_ID" != "" ] && [ "$DT_PAAS_TOKEN" != "" ]; \
