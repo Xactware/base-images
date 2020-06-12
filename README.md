@@ -8,7 +8,9 @@ Base images for .NET Core Runtimes
 
 ### Supported tags and respective Dockerfile links
 
+* [2.2-runtime](https://github.com/Xactware/base-images/blob/master/dotnet/core/runtime/2.2/Dockerfile)
 * [2.2-aspnetcore-runtime](https://github.com/Xactware/base-images/blob/master/dotnet/core/aspnet/2.2/Dockerfile)
+* [3.1-runtime](https://github.com/Xactware/base-images/blob/master/dotnet/core/runtime/3.1/Dockerfile)
 * [3.1-aspnetcore-runtime](https://github.com/Xactware/base-images/blob/master/dotnet/core/aspnet/3.1/Dockerfile)
 
 ### How To Use these Images
