@@ -13,14 +13,19 @@ Base images for .NET Core Runtimes
 * [3.1-runtime](https://github.com/Xactware/base-images/blob/master/dotnet/core/runtime/3.1/Dockerfile)
 * [3.1-aspnetcore-runtime](https://github.com/Xactware/base-images/blob/master/dotnet/core/aspnet/3.1/Dockerfile)
 
+* [5.0-runtime](https://github.com/Xactware/base-images/blob/master/dotnet/runtime/5.0/Dockerfile)
+* [5.0-aspnetcore-runtime](https://github.com/Xactware/base-images/blob/master/dotnet/aspnet/5.0/Dockerfile)
+* [6.0-runtime](https://github.com/Xactware/base-images/blob/master/dotnet/runtime/6.0/Dockerfile)
+* [6.0-aspnetcore-runtime](https://github.com/Xactware/base-images/blob/master/dotnet/aspnet/6.0/Dockerfile)
+
 ### How To Use these Images
 
 ```Dockerfile
-FROM xactware/dotnet:2.2-aspnetcore-runtime
+FROM xactware/dotnet:6.0-aspnetcore-runtime
 ARG source
 WORKDIR /app
 
-COPY ${source:-bin/Release/netcoreapp2.2/publish} .
+COPY ${source:-bin/Release/net6.0/publish} .
 
 ENTRYPOINT [ "dotnet", "Api.dll" ]
 ```
