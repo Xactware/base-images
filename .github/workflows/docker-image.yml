@@ -12,46 +12,46 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build xactware/dotnet:2.2-runtime
-      run: docker build dotnet/core/runtime/2.2 --file Dockerfile --tag xactware/dotnet:2.2-runtime
+      run: docker build dotnet/core/runtime/2.2 --tag xactware/dotnet:2.2-runtime
   aspnet_2_2:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Build xactware/dotnet:3.1-aspnetcore-runtime
-      run: docker build dotnet/core/aspnet/2.2 --file Dockerfile --tag xactware/dotnet:2.2-aspnetcore-runtime
+      run: docker build dotnet/core/aspnet/2.2 --tag xactware/dotnet:2.2-aspnetcore-runtime
   runtime_3_1:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Build xactware/dotnet:3.1-runtime
-      run: docker build dotnet/core/runtime/3.1 --file Dockerfile --tag xactware/dotnet:3.1-runtime
+      run: docker build dotnet/core/runtime/3.1 --tag xactware/dotnet:3.1-runtime
   aspnet_3_1:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Build xactware/dotnet:3.1-aspnetcore-runtime
-      run: docker build dotnet/core/aspnet/3.1 --file Dockerfile --tag xactware/dotnet:3.1-aspnetcore-runtime
+      run: docker build dotnet/core/aspnet/3.1 --tag xactware/dotnet:3.1-aspnetcore-runtime
   runtime_5_0:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Build xactware/dotnet:5.0-runtime
-      run: docker build dotnet/runtime/5.0 --file Dockerfile --tag xactware/dotnet:5.0-runtime
+      run: docker build dotnet/runtime/5.0 --tag xactware/dotnet:5.0-runtime
   aspnet_5_0:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Build xactware/dotnet:5.0-aspnetcore-runtime
-      run: docker build dotnet/aspnet/5.0 --file Dockerfile --tag xactware/dotnet:5.0-aspnetcore-runtime
+      run: docker build dotnet/aspnet/5.0 --tag xactware/dotnet:5.0-aspnetcore-runtime
   runtime_6_0:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Build xactware/dotnet:6.0-runtime
-      run: docker build dotnet/runtime/6.0 --file Dockerfile --tag xactware/dotnet:6.0-runtime
+      run: docker build dotnet/runtime/6.0 --tag xactware/dotnet:6.0-runtime
   aspnet_6_0:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Build xactware/dotnet:6.0-aspnetcore-runtime
-      run: docker build dotnet/aspnet/6.0 --file Dockerfile --tag xactware/dotnet:6.0-aspnetcore-runtime
+      run: docker build dotnet/aspnet/6.0 --tag xactware/dotnet:6.0-aspnetcore-runtime
